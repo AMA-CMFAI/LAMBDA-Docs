@@ -159,7 +159,7 @@ After setting up the environment, the next crucial step is to configure the `con
 
 To use Large Language Models, you will need API keys from their respective providers. Below are some example providers you can use:
 
-- [**OpenAI**](https://openai.com/api/pricing) 
+- **[OpenAI](https://openai.com/api/pricing)**
 - **[DeepSeek](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)**
 - **[OpenRouter](https://openrouter.ai/)**(free trial credits)
 - **[SILICONFLOW](https://siliconflow.cn/)** (free trial credits)
