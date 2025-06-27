@@ -1,0 +1,8 @@
+- [2025.06.27] Fixed the bug of clear button.
+- [2025.06.24] Added sueggestion buttion.
+- [2025.06.20] Doc site is avaliable!
+- [2025.06.06] Fixed the bug of report is affected by system prompt.
+- [2025.06.06] Our GitHub repository has been changed to https://github.com/AMA-CMFAI/LAMBDA
+- [2025.04.04] Version basic-v0.0.1-4.3.2025-alpha is released.
+- [2024.12.20] Added basic version of knowledge integration.
+- [2024.09.06] Our GitHub repository is available.

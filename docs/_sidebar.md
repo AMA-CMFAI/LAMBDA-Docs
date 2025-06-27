@@ -5,3 +5,4 @@
 * Examples
     * [Examples](examples/examples.md)
 
+- [Changelog](changelog.md)
