@@ -8,7 +8,7 @@
 
 ### Basic Requirements
 
-> You should have Python with a version greater than 3.10 on your device.  If you already have it, you can skip this section.
+> Basically, you should fulfill the [minimum requirements of the devices](device.md) to run Python. You should have Python with a version greater than 3.10 on your device.  If you already have it, you can skip this section. 
 
 #### **Python Installation for Windows Users**
 
@@ -228,7 +228,7 @@ base_url_inspector : 'http://localhost:11434/v1'
 Congratulations! After completing these steps, you can run LAMBDA with the following command:
 
 ```
-python app.py
+python lambda_app.py
 ```
 
 We hope this detailed guide helps you get started smoothly with LAMBDA. If you encounter any issues during setup, feel free to consult the official GitHub repository for more information.
