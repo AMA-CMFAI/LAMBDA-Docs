@@ -8,7 +8,7 @@
 
 ### Basic Requirements
 
-> You should have Python with a version greater than 3.10 on your device.  If you already have it, you can skip this section.
+> Basically, you should fulfill the [minimum requirements of the devices](device.md) to run Python. You should have Python with a version greater than 3.10 on your device.  If you already have it, you can skip this section. 
 
 #### **Python Installation for Windows Users**
 
@@ -24,13 +24,13 @@
 
 4. Verify the Installation: Once finished, open Command Prompt (CMD) or PowerShell and type the following command:
 
-   ```
+   ```shell
    python --version
    ```
 
    If you see the output below, the installation was successful.
 
-   ```
+   ```shell
    Python 3.10.x
    ```
 
@@ -52,19 +52,19 @@ macOS often includes an older, pre-installed version of Python. It's best to ins
 
    - Open the Terminal app and run the following command:
 
-     ```
+     ```shell
      brew install python@3.10
      ```
 
 3. Verify the Installation: Open a new Terminal window and type:
 
-   ```
+   ```shell
    python3 --version
    ```
 
    Seeing the version number confirms the installation. Note that on macOS and Linux, you typically use 
 
-   ```
+   ```shell
    python3
    ```
 
@@ -78,19 +78,19 @@ Most Linux distributions (like Ubuntu) come with Python pre-installed. You can u
 
 2. Update your package list:
 
-   ```
+   ```shell
    sudo apt update
    ```
 
 3. Install Python 3.10:
 
-   ```
+   ```shell
    sudo apt install python3.10
    ```
 
 4. Verify the Installation: In the terminal, type:
 
-   ```
+   ```shell
    python3.10 --version
    ```
 
@@ -106,7 +106,7 @@ With Python ready, you can now set up the LAMBDA environment.
 
 First, open your terminal, and use `git` to clone the LAMBDA repository to your local machine:
 
-```
+```shell
 git clone https://github.com/AMA-CMFAI/LAMBDA.git
 cd LAMBDA
 ```
@@ -115,7 +115,7 @@ cd LAMBDA
 
 Using a Conda environment is highly recommended to avoid package conflicts. If you don't have it, search for and install "Anaconda" or "Miniconda".
 
-```bash
+```shell
 # Create a new environment named "lambda" with Python 3.10
 conda create -n lambda python=3.10
 
@@ -125,7 +125,7 @@ conda activate lambda
 
 Or, you can also create a virtual environment by Python:
 
-```
+```shell
 # Create a new environment named "lambda"
 python3 -m venv lambda
 
@@ -137,7 +137,7 @@ source venv/bin/activate
 
 Inside the LAMBDA project directory, you'll find a `requirements.txt` file listing all necessary Python libraries. Install them using `pip`:
 
-```
+```shell
 pip install -r requirements.txt
 ```
 
@@ -145,7 +145,7 @@ pip install -r requirements.txt
 
 LAMBDA uses Jupyter as its code interpreter. To ensure the project can call it correctly, install a local Jupyter kernel:
 
-```
+```shell
 ipython kernel install --name lambda --user
 ```
 
@@ -159,7 +159,7 @@ After setting up the environment, the next crucial step is to configure the `con
 
 To use Large Language Models, you will need API keys from their respective providers. Below are some example providers you can use:
 
-- [**OpenAI**](https://openai.com/api/pricing) 
+- **[OpenAI](https://openai.com/api/pricing)**
 - **[DeepSeek](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)**
 - **[OpenRouter](https://openrouter.ai/)**(free trial credits)
 - **[SILICONFLOW](https://siliconflow.cn/)** (free trial credits)
@@ -180,7 +180,7 @@ Here are some popular tools to use:
 
 Find the `config.yaml` file in the root of the LAMBDA directory and open it with a text editor. You will need to modify the following sections:
 
-```
+```yaml
 #================================================================================================
 #                                       Config of the LLMs
 #================================================================================================
@@ -213,7 +213,7 @@ Here, the base_url is 'http://localhost:11434/v1', and api_key is 'ollama'
 
 So the config should be:
 
-```
+```yaml
 conv_model : "deepseek-r1" # The model you deployed. We highly recommned using the advanced model.
 programmer_model : "deepseek-r1" 
 inspector_model : "deepseek-r1"
@@ -227,8 +227,8 @@ base_url_inspector : 'http://localhost:11434/v1'
 
 Congratulations! After completing these steps, you can run LAMBDA with the following command:
 
-```
-python app.py
+```shell
+python lambda_app.py
 ```
 
 We hope this detailed guide helps you get started smoothly with LAMBDA. If you encounter any issues during setup, feel free to consult the official GitHub repository for more information.
