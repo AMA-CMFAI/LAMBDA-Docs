@@ -168,7 +168,7 @@ Sign up to get your personal API key.
 
 #### 2. Deploying LLMs on Your Machine
 
-We support the OpenAI style interface. You can use any framework to deploy and use the LLMs if it supports the OpenAI style interface.
+We support the OpenAI-style interface. You can use any framework to deploy and use the LLMs if it supports the OpenAI-style interface.
 
 Here are some popular tools to use:
 
@@ -214,9 +214,9 @@ Here, the base_url is 'http://localhost:11434/v1', and api_key is 'ollama'
 So the config should be:
 
 ```yaml
-conv_model : "deepseek-r1" # The model you deployed. We highly recommned using the advanced model.
-programmer_model : "deepseek-r1" 
-inspector_model : "deepseek-r1"
+conv_model : "gpt-oss" # The model you deployed. We highly recommned using the advanced model.
+programmer_model : "gpt-oss" 
+inspector_model : "gpt-oss"
 api_key : "ollama" # The API Key of ollama.
 base_url_conv_model : 'http://localhost:11434/v1' # The base url of ollama
 base_url_programmer : 'http://localhost:11434/v1'
